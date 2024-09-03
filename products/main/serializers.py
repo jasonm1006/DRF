@@ -11,7 +11,7 @@ class ReviewSerializer(serializers.ModelSerializer):
 
 class ProductListSerializer(serializers.Serializer):
     # реализуйте поля title и price
-    title = serializers.CharField(max_length=60)
+    title = serializers.CharField(max_length=100)
     price = serializers.DecimalField(max_digits=10, decimal_places=2)
 
 
